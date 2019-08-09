@@ -12,11 +12,14 @@ namespace Laboratorio_2
         private List<SpecialCard> specialCards;
 
         public List<CombatCard> CombatCards { get; set}
-        public Board BoardGame { get; set }
+        public List<SpecialCard> SpecialCards { get; set}
 
-        public bool CheckIfEndGame() { }
-        public int GetWinner() { }
-        public void Play() { }
+        public void AddCombatCard(CombatCard combatCard) { }
+        public void AddSpecialCard(SpecialCard specialCard) { }
+        public void DestroyCombatCarrd(int cardId) { }
+        public void DestroySpecialCarrd(int cardId) { }
+        public void Shuffle() { }
+
 
     }
 }
